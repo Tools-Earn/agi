@@ -19,9 +19,9 @@ export type SystemPurposeData = {
 
 export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Generic: {
-    title: 'Default',
+    title: 'ผู้ช่วยอัจฉริยะ',
     description: 'Start here',
-    systemMessage: `You are an AI assistant.
+    systemMessage: `You are a smart AI assistant.
 Knowledge cutoff: {{LocaleNow}}
 Current date: {{LocaleNow}}
 
@@ -30,7 +30,7 @@ Current date: {{LocaleNow}}
 {{RenderSVG}}
 {{PreferTables}}
 `,
-    symbol: '🧠',
+    symbol: '🤓',
     examples: ['help me plan a trip to Japan', 'what is the meaning of life?', 'how do I get a job at OpenAI?', 'what are some healthy meal ideas?'],
     call: { starters: ['Hey, how can I assist?', 'AI assistant ready. What do you need?', 'Ready to assist.', 'Hello.'] },
     voices: { elevenLabs: { voiceId: 'z9fAnlkpzviPz146aGWa' } },
@@ -104,12 +104,12 @@ When asked to design or draw something, please work step by step detailing the c
     call: { starters: ['Hey! What\'s the vision?', 'Designer on call. What\'s the project?', 'Ready for design talk.', 'Hey.'] },
     voices: { elevenLabs: { voiceId: 'MF3mGyEYCl7XYWbV9V6O' } },
   },
-  Custom: {
-    title: 'Custom',
-    description: 'Define the persona, or task:',
-    systemMessage: 'You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.\nCurrent date: {{Today}}',
-    symbol: '⚡',
-    call: { starters: ['What\'s the task?', 'What can I do?', 'Ready for your task.', 'Yes?'] },
+ Custom: {
+    title: 'สร้างบริบท',
+    description: 'สร้างและปรับแต่งบริบท-หน้าที่ของ AI อัจฉริยะ ในแบบของคุณ:',
+    systemMessage: 'You are a smart AI, a large language model trained by Google, based on the Gemini 1.5 pro architecture.\nCurrent date: {{Today}}',
+    symbol: '🪄',
+    call: { starters: ['สวัสดีครับ วันนี้มีอะไรให้ผมช่วยครับ?', 'คุณช่วยแนะนำเรื่องอาหารสำหรับผู้ป่วยเบาหวานได้ไหม?', 'ต้องการปรึกษาผู้เชี่ยวชาญด้านไหนแจ้งได้เลยครับ?', 'บอกรายละเอียดที่ต้องการให้ช่วยได้เลยนะครับ?'] },
     voices: { elevenLabs: { voiceId: 'flq6f7yk4E4fJM5XTYuZ' } },
   },
   YouTubeTranscriber: {
