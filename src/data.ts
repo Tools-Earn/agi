@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export type SystemPurposeId = 'Custom' | 'DeveloperPreview'| 'Generic'| 'YouTubeTranscriber';
+export type SystemPurposeId = 'Custom' |'Generic';
 
 export const defaultSystemPurposeId: SystemPurposeId = 'Generic';
 
